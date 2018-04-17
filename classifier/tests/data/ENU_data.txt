@@ -1,0 +1,5 @@
+774776	9	1	Non-synonymous	None	{'C', 'A'}	A	C	TATAGATGGG	CATGTTGTCC	0.45	None	None	None	1
+774777	2	1	Non-synonymous	None	{'T', 'C'}	T	C	CACAGGGATT	CGGTAGCCGC	0.65	None	None	None	1
+774779	5	1	Non-synonymous	None	{'G', 'A'}	G	A	AACCGCGCAG	ACGCAAAGAT	0.55	None	None	None	1
+774780	9	1	Non-synonymous	None	{'T', 'C'}	C	T	AGGGCAGTGA	GGAGGCAGGC	0.7	None	None	None	1
+774781	14	1	Non-synonymous	None	{'G', 'A'}	A	G	TAGTTTAACA	GCACATACAA	0.3	None	None	None	1
