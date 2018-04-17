@@ -1,0 +1,8 @@
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	python : 3.5.2
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	user : yicheng
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	command_string : ./classification_analysis.py logreg_testing --testing_file ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/testing_1.csv.gz --clf_file ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/LR/logreg_classifier.pkl -o ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/LR
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	vars : {'gc_feature': False, 'clf_file': '../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/LR/logreg_classifier.pkl', 'scaler_file': None, 'testing_file': '../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/testing_1.csv.gz', 'output_dir': '../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/LR'}
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	Logistic regression model : ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/LR/logreg_classifier.pkl
+2017-12-15 16:51:19	compute-5-3.local:7056	INFO	Testing data file : ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/testing_1.csv.gz
+2017-12-15 16:52:57	compute-5-3.local:7056	INFO	Result report file : ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_16408/sample_1/LR/classification_report.json

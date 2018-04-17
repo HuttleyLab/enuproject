@@ -1,0 +1,13 @@
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	python : 3.5.2
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	user : yicheng
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	command_string : ./classification_analysis.py bernoullinb_train_and_validate --training_file ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/training_3.csv.gz -o ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC -S 1493876701 -gc
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	vars : {'output_dir': '../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC', 'alpha_options': '0.01,0.1,1,2,3', 'seed': 1493876701, 'training_file': '../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/training_3.csv.gz', 'gc_feature': True}
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	random_number_seed : 1493876701
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	Alpha value options : 0.01,0.1,1,2,3
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	Training data file : ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/training_3.csv.gz
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	Pickled scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC/scaler.pkl
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	cv_training_file_path : ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC/cross_validation/cv_training.csv
+2017-12-14 13:17:05	compute-5-4.local:44455	INFO	cv_validation_file_path : ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC/cross_validation/cv_validation.csv
+2017-12-14 13:17:06	compute-5-4.local:44455	INFO	Pickled NB model : ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC/nb_classifier.pkl
+2017-12-14 13:17:06	compute-5-4.local:44455	INFO	Cross validation report file : ../results/chrom1/7-mer/data_ratio_1/direction_All/1_way_samples/train_size_1009/sample_3/NB_GC/cv_report.json

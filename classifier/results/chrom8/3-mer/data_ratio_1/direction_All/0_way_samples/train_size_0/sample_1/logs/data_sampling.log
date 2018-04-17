@@ -1,0 +1,10 @@
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	python : 3.5.2
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	user : yicheng
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	command_string : ./sample_train_test.py -e ../data/ENU_variants/SNVs20151101_chrom8 -g ../data/germline_variants/mouse_germline_All_88_chrom8 -o ../results/chrom8/3-mer/data_ratio_1 --train_size=0 --feature_dim 0 -t 1 --flank_size 1
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	vars : {'test_size': None, 'enu_prefix': '../data/ENU_variants/SNVs20151101_chrom8', 'enu_ratio': 1, 'seed': None, 'feature_dim': 0, 'run_time': '1', 'ouput_path': '../results/chrom8/3-mer/data_ratio_1', 'germline_prefix': '../data/germline_variants/mouse_germline_All_88_chrom8', 'directions': 'All', 'train_size': '0', 'flank_size': 1}
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	random_number_seed_1 : 1513144332
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	ENU_input_file : ../data/ENU_variants/SNVs20151101_chrom8.txt
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	germline_input_file : ../data/germline_variants/mouse_germline_All_88_chrom8.txt
+2017-12-13 16:52:13	compute-5-4.local:25997	INFO	testing_file_path : ../results/chrom8/3-mer/data_ratio_1/direction_All/0_way_samples/train_size_0/sample_1/testing_1.csv.gz
+2017-12-13 16:52:14	compute-5-4.local:25997	INFO	run duration (minutes) : 0.03

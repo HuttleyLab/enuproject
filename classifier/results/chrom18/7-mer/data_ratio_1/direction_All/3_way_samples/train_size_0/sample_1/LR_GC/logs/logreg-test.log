@@ -1,0 +1,23 @@
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	python : 3.5.2
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	user : yicheng
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	command_string : ./classification_analysis.py logreg_testing --testing_file ../results/chrom18/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_0/sample_1/testing_1.csv.gz --clf_file ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/logreg_classifier.pkl --scaler_file ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl -o ../results/chrom18/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_0/sample_1/LR_GC -gc
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	vars : {'scaler_file': '../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl', 'gc_feature': True, 'clf_file': '../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/logreg_classifier.pkl', 'output_dir': '../results/chrom18/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_0/sample_1/LR_GC', 'testing_file': '../results/chrom18/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_0/sample_1/testing_1.csv.gz'}
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	Logistic regression model : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/logreg_classifier.pkl
+2017-12-16 11:46:17	compute-5-4.local:71856	INFO	Testing data file : ../results/chrom18/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_0/sample_1/testing_1.csv.gz
+2017-12-16 11:46:18	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:19	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:20	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:22	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:23	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:24	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:25	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:27	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:28	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:29	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:30	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:31	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:33	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:34	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:34	compute-5-4.local:71856	INFO	Scaler : ../results/chrom1/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:46:34	compute-5-4.local:71856	INFO	Result report file : ../results/chrom18/7-mer/data_ratio_1/direction_All/3_way_samples/train_size_0/sample_1/LR_GC/classification_report.json

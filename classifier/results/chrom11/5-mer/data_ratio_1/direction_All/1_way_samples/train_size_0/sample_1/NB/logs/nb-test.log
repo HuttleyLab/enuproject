@@ -1,0 +1,8 @@
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	python : 3.5.2
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	user : yicheng
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	command_string : ./classification_analysis.py bernoullinb_testing --testing_file ../results/chrom11/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_0/sample_1/testing_1.csv.gz --clf_file ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/NB/nb_classifier.pkl -o ../results/chrom11/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_0/sample_1/NB
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	vars : {'clf_file': '../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/NB/nb_classifier.pkl', 'testing_file': '../results/chrom11/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_0/sample_1/testing_1.csv.gz', 'output_dir': '../results/chrom11/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_0/sample_1/NB', 'scaler_file': None, 'gc_feature': False}
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	Naive Bayes model : ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/NB/nb_classifier.pkl
+2017-12-16 11:28:12	compute-5-0.local:80110	INFO	Testing data file : ../results/chrom11/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_0/sample_1/testing_1.csv.gz
+2017-12-16 11:28:17	compute-5-0.local:80110	INFO	Result report file : ../results/chrom11/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_0/sample_1/NB/classification_report.json

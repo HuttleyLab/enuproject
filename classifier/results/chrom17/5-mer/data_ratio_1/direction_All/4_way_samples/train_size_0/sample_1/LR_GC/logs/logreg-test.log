@@ -1,0 +1,33 @@
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	python : 3.5.2
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	user : yicheng
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	command_string : ./classification_analysis.py logreg_testing --testing_file ../results/chrom17/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_0/sample_1/testing_1.csv.gz --clf_file ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/logreg_classifier.pkl --scaler_file ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl -o ../results/chrom17/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_0/sample_1/LR_GC -gc
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	vars : {'gc_feature': True, 'clf_file': '../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/logreg_classifier.pkl', 'scaler_file': '../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl', 'output_dir': '../results/chrom17/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_0/sample_1/LR_GC', 'testing_file': '../results/chrom17/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_0/sample_1/testing_1.csv.gz'}
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	Logistic regression model : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/logreg_classifier.pkl
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	Testing data file : ../results/chrom17/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_0/sample_1/testing_1.csv.gz
+2017-12-16 11:44:45	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:46	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:47	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:47	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:48	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:49	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:49	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:50	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:51	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:52	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:53	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:53	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:54	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:54	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:55	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:55	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:56	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:57	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:57	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:58	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:58	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:58	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:59	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:59	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:59	compute-5-4.local:69573	INFO	Scaler : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_10255/sample_1/LR_GC/scaler.pkl
+2017-12-16 11:44:59	compute-5-4.local:69573	INFO	Result report file : ../results/chrom17/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_0/sample_1/LR_GC/classification_report.json

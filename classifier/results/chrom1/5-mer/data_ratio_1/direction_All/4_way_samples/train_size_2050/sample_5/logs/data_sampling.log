@@ -1,0 +1,11 @@
+2017-12-13 16:12:34	fisher:43961	INFO	system_details : system=#83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017
+2017-12-13 16:12:34	fisher:43961	INFO	python : 3.5.2
+2017-12-13 16:12:34	fisher:43961	INFO	user : yicheng
+2017-12-13 16:12:34	fisher:43961	INFO	command_string : sample_train_test.py -e ../data/ENU_variants/SNVs20151101_chrom1 -g ../data/germline_variants/mouse_germline_All_88_chrom1 -o ../results/chrom1/5-mer/data_ratio_1/ -S 1493876701 -f 2 --train_size 0.0589 --test_size 0.0589 -d 4 --directions All -t 5
+2017-12-13 16:12:34	fisher:43961	INFO	vars : {'ouput_path': '../results/chrom1/5-mer/data_ratio_1/', 'train_size': '0.0589', 'enu_ratio': 1, 'run_time': '5', 'germline_prefix': '../data/germline_variants/mouse_germline_All_88_chrom1', 'seed': 1493876701, 'flank_size': 2, 'enu_prefix': '../data/ENU_variants/SNVs20151101_chrom1', 'directions': 'All', 'test_size': '0.0589', 'feature_dim': 4}
+2017-12-13 16:12:34	fisher:43961	INFO	random_number_seed_5 : 1493876711
+2017-12-13 16:12:34	fisher:43961	INFO	ENU_input_file : ../data/ENU_variants/SNVs20151101_chrom1.txt
+2017-12-13 16:12:34	fisher:43961	INFO	germline_input_file : ../data/germline_variants/mouse_germline_All_88_chrom1.txt
+2017-12-13 16:12:34	fisher:43961	INFO	training_file_path : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_2050/sample_5/training_5.csv.gz
+2017-12-13 16:12:35	fisher:43961	INFO	testing_file_path : ../results/chrom1/5-mer/data_ratio_1/direction_All/4_way_samples/train_size_2050/sample_5/testing_5.csv.gz
+2017-12-13 16:12:36	fisher:43961	INFO	run duration (minutes) : 0.43

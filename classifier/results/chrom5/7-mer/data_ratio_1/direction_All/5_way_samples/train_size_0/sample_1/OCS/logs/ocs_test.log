@@ -1,0 +1,8 @@
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	python : 3.5.2
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	user : yicheng
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	command_string : ./one_class_svm_analysis.py ocs_testing --testing_file ../results/chrom5/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_0/sample_1/testing_1.csv.gz --clf_file ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_10255/sample_1/OCS/one_class_svm.pkl -o ../results/chrom5/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_0/sample_1/OCS
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	vars : {'output_dir': '../results/chrom5/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_0/sample_1/OCS', 'testing_file': '../results/chrom5/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_0/sample_1/testing_1.csv.gz', 'clf_file': '../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_10255/sample_1/OCS/one_class_svm.pkl'}
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	Logistic regression model : ../results/chrom1/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_10255/sample_1/OCS/one_class_svm.pkl
+2018-02-12 11:58:17	compute-5-3.local:89187	INFO	Testing data file : ../results/chrom5/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_0/sample_1/testing_1.csv.gz
+2018-02-12 12:49:25	compute-5-3.local:89187	INFO	Result report file : ../results/chrom5/7-mer/data_ratio_1/direction_All/5_way_samples/train_size_0/sample_1/OCS/classification_report.json
