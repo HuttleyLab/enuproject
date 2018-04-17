@@ -17,7 +17,6 @@ build
 draw_results
 *cover*
 *mutation_motif.egg-info*
-results/*
 .ipynb_checkpoints/*
 .cache/*
 data/direction_*
