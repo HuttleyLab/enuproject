@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos1	0.00487890911483	1487.657451658556	3	0	count ~ group * mut * base - group : mut : base
+pos2	0.00503591983959	1535.5325338097027	3	0	count ~ group * mut * base - group : mut : base
+pos0	0.00177727905484	541.9208202868983	3	3.91828689998e-117	count ~ group * mut * base - group : mut : base
+pos3	0.000569923544841	173.77880759861694	3	1.94458872016e-37	count ~ group * mut * base - group : mut : base
+pos1:pos2	0.000374991708957	114.34097192847672	9	1.91672349534e-20	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1	0.00089121589689	271.74598641616785	9	2.52742854773e-53	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	0.000231733331152	70.65920040168378	9	1.1305631114e-11	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos3	7.95755568083e-05	24.263860479749553	9	0.00390307860671	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2	0.000249027237749	75.932389225556	9	1.03403910074e-12	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	4.95957302551e-05	15.122531686463645	9	0.0876247623495	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2:pos3	0.000199486675275	60.82667907822513	27	0.000205329189224	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2	0.000251132948528	76.57445413324028	27	1.23436184134e-06	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos1:pos2:pos3	0.000272680359451	83.14460448230578	27	1.24962167198e-07	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos3	0.000224950236234	68.59092623161308	27	1.77777418054e-05	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	0.000438166613608	133.60401115504757	81	0.000212473196438	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

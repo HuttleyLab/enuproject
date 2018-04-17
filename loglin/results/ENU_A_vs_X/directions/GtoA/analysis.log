@@ -1,0 +1,21 @@
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	system_details : system=Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	python : 3.5.2
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	user : yichengzhu
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	command_string : /Users/yichengzhu/miniconda3/envs/py35/bin/mutation_analysis nbr -1 ../data/ENU_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-GtoA.txt -2 ../data/ENU_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-GtoA.txt -o ../results/ENU_A_vs_X/directions/GtoA
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	vars : {'format': 'pdf', 'group_label': None, 'plot_cfg': None, 'no_type3': False, 'outpath': '../results/ENU_A_vs_X/directions/GtoA', 'group_ref': None, 'verbose': False, 'strand_symmetry': False, 'first_order': False, 'dry_run': False, 'countsfile': '../data/ENU_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-GtoA.txt', 'countsfile2': '../data/ENU_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-GtoA.txt'}
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	countsfile1_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/ENU_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-GtoA.txt
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	countsfile1_path md5sum : 575f1bce4d405c1580d0776b6867d13d
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	countsfile2_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/ENU_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-GtoA.txt
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	countsfile2_path md5sum : d077c42b2b73210a9954bebf8ebeafa1
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	group_counts : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_A_vs_X/directions/GtoA/group_counts_table.txt
+2017-08-22 01:14:47	JCSMR027497.local:64162	INFO	group_counts md5sum : be9f864e3735461c9bed386682d43155
+2017-08-22 01:14:48	JCSMR027497.local:64162	INFO	analysis1 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_A_vs_X/directions/GtoA/1.json
+2017-08-22 01:14:48	JCSMR027497.local:64162	INFO	analysis1 md5sum : df1ae51f280d846168f0a93740415194
+2017-08-22 01:14:48	JCSMR027497.local:64162	INFO	analysis2 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_A_vs_X/directions/GtoA/2.json
+2017-08-22 01:14:48	JCSMR027497.local:64162	INFO	analysis2 md5sum : 4092785f730c76d1290826ae1c6e9129
+2017-08-22 01:14:50	JCSMR027497.local:64162	INFO	analysis3 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_A_vs_X/directions/GtoA/3.json
+2017-08-22 01:14:50	JCSMR027497.local:64162	INFO	analysis3 md5sum : 2c0baed71cd5be2e6384cdf243c6360f
+2017-08-22 01:15:06	JCSMR027497.local:64162	INFO	analysis4 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_A_vs_X/directions/GtoA/4.json
+2017-08-22 01:15:06	JCSMR027497.local:64162	INFO	analysis4 md5sum : 45f38e0122be016556fdb61d8dd2a94a
+2017-08-22 01:15:07	JCSMR027497.local:64162	INFO	summary : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_A_vs_X/directions/GtoA/summary.txt
+2017-08-22 01:15:07	JCSMR027497.local:64162	INFO	summary md5sum : 99e98788367e764a1c85193838ba9477

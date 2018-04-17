@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos2	0.00416920597579	1393.7405424706092	3	6.72092264899e-302	count ~ group * mut * base - group : mut : base
+pos0	0.00330738718456	1105.6396914745403	3	2.17535755028e-239	count ~ group * mut * base - group : mut : base
+pos3	0.000264973136455	88.57892967823587	3	4.42341361971e-19	count ~ group * mut * base - group : mut : base
+pos1	0.0170307807387	5693.287816275435	3	0	count ~ group * mut * base - group : mut : base
+pos1:pos3	0.000150515701124	50.31649579146563	9	9.39233228073e-08	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	3.58341663182e-05	11.97914679517126	9	0.214487464338	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos2	0.00105631891378	353.12107496202935	9	1.342337669e-70	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2	0.000367867970175	122.97605522159691	9	3.28267345082e-22	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1	0.000849790545303	284.0798805514735	9	6.18568217413e-56	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	0.000287567616807	96.13212889302372	9	9.50754136038e-17	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1:pos3	0.000123173923101	41.176303448966024	27	0.0396063818982	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2	0.000185952332204	62.16274894183166	27	0.000136370602525	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos1:pos2:pos3	0.000140441296721	46.94868284602339	27	0.0100360454876	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos2:pos3	0.000164901209159	55.12548481456927	27	0.0011055803595	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	0.000354631054885	118.55103386187028	81	0.00416005844834	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

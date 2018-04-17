@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos3	0.00294990485021	1032.749888437443	3	1.41438840017e-223	count ~ group * mut * base - group : mut : base
+pos0	0.000642309656039	224.87004134060734	3	1.77793305427e-48	count ~ group * mut * base - group : mut : base
+pos1	0.00612972852455	2145.993437531957	3	0	count ~ group * mut * base - group : mut : base
+pos2	0.0166061365547	5813.741983256264	3	0	count ~ group * mut * base - group : mut : base
+pos1:pos2	0.00112191436955	392.77773312071776	9	4.75809369987e-79	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	0.000945524349132	331.02429253358923	9	6.73710920265e-66	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1	0.000277717759244	97.22787664027975	9	5.71466080816e-17	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2	0.000163562744175	57.26266248476484	9	4.50078546171e-09	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	0.000136411179117	47.75700816427203	9	2.8354524234e-07	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos3	0.000294417889888	103.07452557825073	9	3.75270138351e-18	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos2:pos3	0.000187052669577	65.48639140834118	27	4.82058284821e-05	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos3	0.000139937308109	48.99149181967631	27	0.00593726972433	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos2:pos3	0.000141910250161	49.68221094048204	27	0.00495093310986	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2	0.000232324670207	81.335937740795	27	2.36561898649e-07	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	0.000240349401674	84.14536412847556	81	0.383524551731	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

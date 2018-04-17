@@ -1,0 +1,4 @@
+directions	positions	probs
+GtoT	pos3	0.000533441069468
+CtoA	pos1:pos3	0.000195069769523
+TtoC	pos1:pos2:pos3	0.00188797794997

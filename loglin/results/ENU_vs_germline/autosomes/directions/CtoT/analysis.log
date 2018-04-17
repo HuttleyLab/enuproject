@@ -1,0 +1,21 @@
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	system_details : system=Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	python : 3.5.2
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	user : yichengzhu
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	command_string : /Users/yichengzhu/miniconda3/envs/py35/bin/mutation_analysis nbr -1 ../results/ENU_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-CtoT.txt -2 ../results/germline_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-CtoT.txt -o ../results/ENU_vs_germline/autosomes/directions/CtoT
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	vars : {'dry_run': False, 'strand_symmetry': False, 'countsfile': '../results/ENU_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-CtoT.txt', 'first_order': False, 'verbose': False, 'outpath': '../results/ENU_vs_germline/autosomes/directions/CtoT', 'group_ref': None, 'plot_cfg': None, 'no_type3': False, 'format': 'pdf', 'countsfile2': '../results/germline_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-CtoT.txt', 'group_label': None}
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	countsfile1_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-CtoT.txt
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	countsfile1_path md5sum : 31d95d6c3dfdbe84c834aa6bb60e2ab4
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	countsfile2_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/germline_variants/counts/autosomes/directions/freq_All-chrom_All-GC_All-CtoT.txt
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	countsfile2_path md5sum : 3d7c4f16d3ef92bfdb04c52237d10e9e
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	group_counts : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/directions/CtoT/group_counts_table.txt
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	group_counts md5sum : 72eb63a3844a4fd70c0dfc8b9be44ce8
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	analysis1 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/directions/CtoT/1.json
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	analysis1 md5sum : 04aac68d420b6746685073a89be0ade2
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	analysis2 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/directions/CtoT/2.json
+2017-08-22 00:55:29	JCSMR027497.local:63756	INFO	analysis2 md5sum : 78ddff79fbb685787d4d93965a9038e7
+2017-08-22 00:55:31	JCSMR027497.local:63756	INFO	analysis3 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/directions/CtoT/3.json
+2017-08-22 00:55:31	JCSMR027497.local:63756	INFO	analysis3 md5sum : f22a0eeb0e94891cec4373515aea0969
+2017-08-22 00:55:35	JCSMR027497.local:63756	INFO	analysis4 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/directions/CtoT/4.json
+2017-08-22 00:55:35	JCSMR027497.local:63756	INFO	analysis4 md5sum : e8250a21c8a47875bbf915766ddddb67
+2017-08-22 00:55:37	JCSMR027497.local:63756	INFO	summary : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/directions/CtoT/summary.txt
+2017-08-22 00:55:37	JCSMR027497.local:63756	INFO	summary md5sum : 92677925cf0edab3158caae697c3822d

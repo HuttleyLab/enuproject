@@ -1,0 +1,14 @@
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	system_details : system=Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	python : 3.5.2
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	user : yichengzhu
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	command_string : /Users/yichengzhu/miniconda3/envs/py35/bin/mutation_analysis spectra --outpath /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/combined/ --countsfile /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/ENU_variants/counts/autosomes/combined/combined_total_count.txt --countsfile2 /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/germline_variants/counts/autosomes/combined/combined_total_count.txt
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	vars : {'verbose': False, 'force_overwrite': False, 'countsfile2': '/Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/germline_variants/counts/autosomes/combined/combined_total_count.txt', 'dry_run': False, 'strand_symmetry': False, 'countsfile': '/Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/ENU_variants/counts/autosomes/combined/combined_total_count.txt', 'outpath': '/Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/combined/'}
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	input_file_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/ENU_variants/counts/autosomes/combined/combined_total_count.txt
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	input_file_path md5sum : 7861b8a9b075e831024d60ceedd3a0c4
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	input_file_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/data/germline_variants/counts/autosomes/combined/combined_total_count.txt
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	input_file_path md5sum : 8e564406e3eec1a45450d7cfe4471fa3
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	output_file_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	output_file_path md5sum : 4c8edd61173b74116d59b91152a20995
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	output_file_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/autosomes/combined/spectra_summary.txt
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	output_file_path md5sum : 4185ca50f43e9c63fa621ba3b2ab14b5
+2018-03-02 14:16:00	JCSMR027497.local:39888	INFO	significance : ['RE=0.051934', 'Dev=748.99', 'df=2', 'p=2.28693758028e-163']

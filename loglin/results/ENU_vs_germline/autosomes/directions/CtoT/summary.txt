@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos1	0.00298361527063	1025.7430611187542	3	4.68388782695e-222	count ~ group * mut * base - group : mut : base
+pos2	0.00313550892386	1077.9628839505513	3	2.19774951307e-233	count ~ group * mut * base - group : mut : base
+pos3	0.000685020283124	235.50449317563368	3	8.92526734781e-51	count ~ group * mut * base - group : mut : base
+pos0	0.000107012669803	36.79009977689314	3	5.09675818591e-08	count ~ group * mut * base - group : mut : base
+pos1:pos3	0.000172063712737	59.15412792940663	9	1.95065353413e-09	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	0.00231050938949	794.3346440314568	9	3.52387965211e-165	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1	0.000143296410279	49.264159482506834	9	1.48087965585e-07	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	4.33731561605e-05	14.911344102715034	9	0.0934001659317	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos2	0.000500081503593	171.92402028329136	9	2.45152691761e-32	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2	0.000147701653359	50.77864681161187	9	7.68663611451e-08	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1:pos3	0.000205654969438	70.70253325292356	27	8.90036386127e-06	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos2:pos3	0.000322451131494	110.85611939862925	27	3.97740009611e-12	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos1:pos2:pos3	0.000437650688778	150.4608055964004	27	4.23859792813e-19	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2	0.000248920938958	85.57702744612807	27	5.25149841303e-08	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	0.000607838214548	208.96991545585442	81	2.94107382054e-13	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

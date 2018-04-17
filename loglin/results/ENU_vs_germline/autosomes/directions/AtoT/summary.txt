@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos3	0.000198500158275	28.885346031875432	3	2.36716172539e-06	count ~ group * mut * base - group : mut : base
+pos1	0.000573454174413	83.44790455217252	3	5.5882965595e-18	count ~ group * mut * base - group : mut : base
+pos0	0.000797087332354	115.99055442952067	3	5.63403403365e-25	count ~ group * mut * base - group : mut : base
+pos2	0.00322133959925	468.76289580345883	3	2.80395290118e-101	count ~ group * mut * base - group : mut : base
+pos1:pos3	0.000189878222969	27.63069925003843	9	0.00109921374086	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	5.42274673859e-05	7.891072599060321	9	0.545159751894	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2	0.000392036063622	57.04830390612488	9	4.94702492624e-09	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos2	0.000550381230778	80.09037594029519	9	1.55068499998e-13	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1	0.00136403154564	198.49114245849015	9	6.86231927385e-38	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	0.000625865579697	91.07470742635365	9	9.90685209001e-16	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1:pos2	0.000448740678952	65.29984611976977	27	5.11436074802e-05	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos3	0.000322283915406	46.89811080209028	27	0.0101648573787	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos1:pos2:pos3	0.000275325164491	40.064767286402194	27	0.0505264352721	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos2:pos3	0.000181287415444	26.380582120612505	27	0.497564226248	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	0.000740709696209	107.78659357297562	81	0.0249878988646	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

@@ -1,0 +1,21 @@
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	system_details : system=Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	python : 3.5.2
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	user : yichengzhu
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	command_string : /Users/yichengzhu/miniconda3/envs/py35/bin/mutation_analysis nbr -1 ../results/ENU_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-AtoC.txt -2 ../results/germline_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-AtoC.txt -o ../results/ENU_vs_germline/sex_chroms/directions/AtoC
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	vars : {'countsfile2': '../results/germline_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-AtoC.txt', 'first_order': False, 'verbose': False, 'outpath': '../results/ENU_vs_germline/sex_chroms/directions/AtoC', 'strand_symmetry': False, 'plot_cfg': None, 'group_label': None, 'group_ref': None, 'format': 'pdf', 'dry_run': False, 'countsfile': '../results/ENU_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-AtoC.txt', 'no_type3': False}
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	countsfile1_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-AtoC.txt
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	countsfile1_path md5sum : 614ba39f86694daa143507e86ff6e798
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	countsfile2_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/germline_variants/counts/sex_chroms/directions/freq_All-chrom_All-GC_All-AtoC.txt
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	countsfile2_path md5sum : 6c5e0e8063c81574904e45aced64f07b
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	group_counts : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/sex_chroms/directions/AtoC/group_counts_table.txt
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	group_counts md5sum : b40a4506e9c2dde99b6ec45795d087a2
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	analysis1 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/sex_chroms/directions/AtoC/1.json
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	analysis1 md5sum : b6581453ee6af0675b2d14716a596e0c
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	analysis2 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/sex_chroms/directions/AtoC/2.json
+2017-08-22 00:53:27	JCSMR027497.local:63694	INFO	analysis2 md5sum : cd4472d1bb506170bc2eca10af8ce5c3
+2017-08-22 00:53:30	JCSMR027497.local:63694	INFO	analysis3 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/sex_chroms/directions/AtoC/3.json
+2017-08-22 00:53:30	JCSMR027497.local:63694	INFO	analysis3 md5sum : a4cd9f03e707e754bd5dbf182962c719
+2017-08-22 00:53:46	JCSMR027497.local:63694	INFO	analysis4 : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/sex_chroms/directions/AtoC/4.json
+2017-08-22 00:53:46	JCSMR027497.local:63694	INFO	analysis4 md5sum : daef1be35a5e51aa8dd68203cdba19a8
+2017-08-22 00:53:49	JCSMR027497.local:63694	INFO	summary : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENU_Project/results/ENU_vs_germline/sex_chroms/directions/AtoC/summary.txt
+2017-08-22 00:53:49	JCSMR027497.local:63694	INFO	summary md5sum : 3750947c6578ab5c05c06be64d912a67

@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos3	2.78052170649e-06	0.7517974590004206	3	0.860958202077	count ~ group * mut * base - group : mut : base
+pos2	1.39064105367e-05	3.7600152809096654	3	0.288571406159	count ~ group * mut * base - group : mut : base
+pos0	8.31497091488e-06	2.248201835965416	3	0.522516617601	count ~ group * mut * base - group : mut : base
+pos1	3.30116893576e-06	0.8925700568500838	3	0.827220445349	count ~ group * mut * base - group : mut : base
+pos0:pos2	3.41083298217e-05	9.222210217194748	9	0.417020391134	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	3.57261368367e-05	9.659632877903709	9	0.378735784988	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1	1.93630957269e-05	5.2353938226284304	9	0.813324517083	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	3.1194123409e-05	8.434267087314238	9	0.491042691516	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos3	2.11222404936e-05	5.711031384670132	9	0.768454784206	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos2	1.21988976447e-05	3.298337945186071	9	0.951283827145	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1:pos3	0.000109457257171	29.595053193965924	27	0.332652428342	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos2:pos3	0.000148966855894	40.27765849658797	27	0.048251281878	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos1:pos2:pos3	0.000104531310062	28.26317561458457	27	0.397501811491	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2	9.21335565856e-05	24.911071029623884	27	0.579445805982	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	0.000439942585689	118.9516763184717	81	0.00386928684126	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

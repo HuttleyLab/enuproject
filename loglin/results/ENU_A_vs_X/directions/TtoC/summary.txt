@@ -1,0 +1,16 @@
+Position	RE	Deviance	df	prob	formula
+pos2	4.26511563357e-05	8.503787550211639	3	0.0366703285589	count ~ group * mut * base - group : mut : base
+pos1	8.69080216571e-06	1.7327721357992383	3	0.629672546302	count ~ group * mut * base - group : mut : base
+pos3	3.5849844389e-05	7.1477419742849175	3	0.0673348844359	count ~ group * mut * base - group : mut : base
+pos0	1.0837159765e-05	2.1607129139523553	3	0.539728098147	count ~ group * mut * base - group : mut : base
+pos0:pos1	3.11344106986e-05	6.207578805078116	9	0.718976584399	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos2	3.80441381688e-05	7.585240268105007	9	0.576422058643	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos2	7.79779638797e-05	15.54724643832543	9	0.0769596871395	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos1:pos3	5.05611640778e-05	10.080884893827754	9	0.343976914869	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos3	5.22930399711e-05	10.426186309438613	9	0.317096722578	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos2:pos3	5.8659329487e-05	11.695497113120444	9	0.231025075633	count ~ group * mut * base1 * base2 - group : mut : base1 : base2
+pos0:pos1:pos2	0.000143064269847	28.524154122126777	27	0.384343095973	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos2:pos3	0.000216682340683	43.20212508530177	27	0.0249555858964	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos3	0.000244486802934	48.74577876895161	27	0.00633049124168	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos1:pos2:pos3	0.000266975785014	53.22963201615404	27	0.00188797794997	count ~ group * mut * base1 * base2 * base3 - group : mut : base1 : base2 : base3
+pos0:pos1:pos2:pos3	1.17105907048e-14	2.3348575747322615e-09	81	1.0	count ~ group * mut * base1 * base2 * base3 * base4 - group : mut : base1 : base2 : base3 : base4

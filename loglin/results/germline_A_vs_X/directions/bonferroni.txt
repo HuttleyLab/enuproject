@@ -1,0 +1,2 @@
+directions	positions	probs
+CtoG	pos0:pos1:pos3	0.002219230044
