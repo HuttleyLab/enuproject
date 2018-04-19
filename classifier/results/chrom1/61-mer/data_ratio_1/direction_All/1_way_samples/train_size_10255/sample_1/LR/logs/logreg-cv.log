@@ -1,0 +1,14 @@
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	python : 3.5.2
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	user : yicheng
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	command_string : classification_analysis.py logreg_train_and_validate --training_file ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/training_1.csv.gz -o ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR -f 30 -S 1493876701
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	vars : {'c_options': '0.1,1,10,100', 'seed': 1493876701, 'flank_size': 30, 'training_file': '../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/training_1.csv.gz', 'output_dir': '../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR', 'gc_feature': False, 'penalty_options': 'l1'}
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	random_number_seed : 1493876701
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	Penalty options : l1
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	C value options : 0.1,1,10,100
+2018-02-28 13:10:51	compute-5-4.local:35849	INFO	Training data file : ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/training_1.csv.gz
+2018-02-28 13:10:57	compute-5-4.local:35849	INFO	cv_training_file_path : ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR/cross_validation/cv_training.csv
+2018-02-28 13:10:58	compute-5-4.local:35849	INFO	cv_validation_file_path : ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR/cross_validation/cv_validation.csv
+2018-02-28 13:12:14	compute-5-4.local:35849	INFO	Pickled logistic regression model : ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR/logreg_classifier.pkl
+2018-02-28 13:12:14	compute-5-4.local:35849	INFO	Cross validation report file : ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR/cv_report.json
+2018-02-28 13:12:14	compute-5-4.local:35849	INFO	Betas saved to file : ../results/chrom1/61-mer/data_ratio_1/direction_All/1_way_samples/train_size_10255/sample_1/LR/betas.json
