@@ -1,9 +1,15 @@
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	system_details : system=Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	python : 3.5.2
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	user : yichengzhu
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	command_string : /Users/yichengzhu/miniconda3/envs/py35/bin/mutation_draw spectra_grid --figpath=loglin/results/ENU_vs_germline/autosomes/combined/spectra_grid.pdf --json_path=loglin/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json --group_label=group
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	vars : {'format': 'pdf', 'no_type3': False, 'json_path': 'loglin/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json', 'group_label': 'group', 'dry_run': False, 'force_overwrite': False, 'sample_size': False, 'figpath': 'loglin/results/ENU_vs_germline/autosomes/combined/spectra_grid.pdf', 'plot_cfg': None}
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	input_file_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENUProject/loglin/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	input_file_path md5sum : 4c8edd61173b74116d59b91152a20995
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	output_file_path : /Users/yichengzhu/Desktop/Yicheng_Zhu/ENUProject/loglin/results/ENU_vs_germline/autosomes/combined/spectra_grid.pdf
-2018-04-19 09:29:52	JCSMR027497.local:14328	INFO	output_file_path md5sum : 68862cc7f18dbbefdacb3d1fe31aec9c
+2018-04-24 18:46:19	Thales.local:12422	INFO	system_details : system=Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+2018-04-24 18:46:19	Thales.local:12422	INFO	python : 3.6.3
+2018-04-24 18:46:19	Thales.local:12422	INFO	user : gavin
+2018-04-24 18:46:19	Thales.local:12422	INFO	command_string : /Users/gavin/miniconda3/envs/py36/bin/mutation_draw spectra_grid --figpath=loglin/results/ENU_vs_germline/autosomes/combined/spectra_grid.pdf --json_path=loglin/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json --group_label=group
+2018-04-24 18:46:19	Thales.local:12422	INFO	vars : {'dry_run': False, 'force_overwrite': False, 'sample_size': False, 'format': 'pdf', 'figpath': 'loglin/results/ENU_vs_germline/autosomes/combined/spectra_grid.pdf', 'no_type3': False, 'plot_cfg': None, 'group_label': 'group', 'json_path': 'loglin/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json'}
+2018-04-24 18:46:19	Thales.local:12422	INFO	input_file_path : /Users/gavin/repos/ENUProject/loglin/results/ENU_vs_germline/autosomes/combined/spectra_analysis.json
+2018-04-24 18:46:19	Thales.local:12422	INFO	input_file_path md5sum : 4c8edd61173b74116d59b91152a20995
+2018-04-24 18:46:20	Thales.local:12422	DEBUG	findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=24.0 to DejaVu Sans ('/Users/gavin/miniconda3/envs/mclass/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+2018-04-24 18:46:20	Thales.local:12422	DEBUG	findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Users/gavin/miniconda3/envs/mclass/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+2018-04-24 18:46:20	Thales.local:12422	DEBUG	Assigning font /b'F1' = '/Users/gavin/miniconda3/envs/mclass/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+2018-04-24 18:46:20	Thales.local:12422	DEBUG	findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=20.0 to DejaVu Sans ('/Users/gavin/miniconda3/envs/mclass/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+2018-04-24 18:46:20	Thales.local:12422	DEBUG	Embedding font /Users/gavin/miniconda3/envs/mclass/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+2018-04-24 18:46:20	Thales.local:12422	DEBUG	Writing TrueType font.
+2018-04-24 18:46:20	Thales.local:12422	INFO	output_file_path : /Users/gavin/repos/ENUProject/loglin/results/ENU_vs_germline/autosomes/combined/spectra_grid.pdf
+2018-04-24 18:46:20	Thales.local:12422	INFO	output_file_path md5sum : 60efc8ce036d20cb3e8f121e5f231566
