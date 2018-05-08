@@ -43,7 +43,6 @@ Download ENU mutation files `SNVs20151101.txt <https://databases.apf.edu.au/muta
 
 .. ``sort_mut_dir.py`` categorise ENU and germline variant data according to their mutation directions, and save into different files.
 
-**Currently, we are working on variant data on chromosome 1 only, I have uploaded both germline and ENU chrom1 data onto this repo, and also included 2 example data file. For the code testing purpose, we can just use these data, and don't need to run the following command to download all these data again**:blush:
 
 Example workflow
 ================
