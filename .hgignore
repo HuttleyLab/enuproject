@@ -4,7 +4,7 @@ syntax:glob
 *.pyo
 *.so
 *.o
-*.DS_Store
+*.DS_Store*
 *.tmproj
 *.rej
 *.orig
@@ -32,5 +32,5 @@ example_results*
 figs_n_tabs/*
 plos*
 genome/*
-ENU_variants/*
-germline_variants/*
+loglin/results/ENU_variants/*
+loglin/results/germline_variants/*
