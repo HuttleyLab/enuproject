@@ -34,3 +34,5 @@ plos*
 genome/*
 loglin/results/ENU_variants/*
 loglin/results/germline_variants/*
+loglin/data/ENU_variants/*
+loglin/data/germline_variants/*
