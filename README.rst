@@ -8,9 +8,7 @@ This repository contains scripts used to generate the samples and perform the an
 Initial Setup
 *************
 
-``ENU_project.yml`` file assists with initial settings, it set up all required dependencies to run scripts in this repository.
-
-Running the following commande to create a new environment named `mclass` using conda, and to install all required dependencies. (please make sure the latest version of conda is installed.)
+``ENU_project.yml`` file assists with setting up a virtual environment named ``mclass`` with all required dependencies installed within this virtual environment. Running the following commande to create the `mclass` environment using conda (please make sure the latest version of conda is installed).
 
 `conda env create -f ENU_project.yml`
 
@@ -18,47 +16,22 @@ Activating the ``mclass`` environment by running:
 
 `source activate mclass`
 
+This environment has all required dependencies installed to run all scripts within this repository.
+
+
 *************
-repo content
+Repo contents
 *************
-This repository contains scripts used to run two completely independent analyses: loglin analysis and mutation classification analysis. 
 
-DATA is up on zenodo
-data for the loglin
-data for classifier
-jupiter note book is used to reproduc the figure and table prudoced in the manuscript.
+This repository contains scripts used to run two completely independent analyses. 
 
+The `loglin` directory contains scripts and data to run the loglinear analysis. The log-linear analysis compares the neighbourhood effects between the ENU-induced and spontaneous mutations in mouse, in terms of the identity of the associated mutation motifs and their relative magnitude. Please refer to the README.rst file inside this directory for detailed explaination regarding the package installation and the analyses implementation.
 
+The `classifier` directory contains scripts and data to perform the classification analysis. The classification analysis uses the neighbourhood effect discovered from the log-linear analysis to build classifiers, for predicting the mechanistic origin of individual point mutations. Again, for detailed installation and implementation guidelines, please refer to the README.rst file inside this directory.
 
-
+The raw data used in this study are available at `Zenodo <http://zenodo.org/record/1204695>`_.
 
 
-The latter basically logs commands, file inputs and outputs, to assist with reproducible research.
+`manuscript_figs_tables.ipynb` is a Jupiter notenook used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the `compound_figures` directory in LATEX format.
 
-%manuscript contains two completely independent analysis
-
-*******
-log-lin
-*******
-
-classifier: using what we discovered to build clf for predicting the sample of individual point muts
-the raw data is avaliable on zenodo, <\link>
-we need a copy of 3-clause bsd lisence, there is a licence, these code is released under that licence.
-This repo consists of two analyses components: 
-
-*******
-loglin
-*******
-
-This directory contains the scripts and results of the log-linear analysis for examination of the neighbourhood effects on ENU-induced and spontaneous germline mutations in the mouse, respectively. Please refer to the README.rst file inside this directory for detailed explaination regarding the package installation and the analyses implementation.
-
-**********
-classifier
-**********
-
-This directory contains the scripts and results of applying machine learning techniques to classify variants as having derived from ENU treatment or occur spontaneously in the mouse genome. Again, for detailed installation and implementation guidelines, please refer to the README.rst file inside this directory.
-
-
-
-
-
+The BSD 3-clause license is included in this repo as well, refer to `license.txt`
