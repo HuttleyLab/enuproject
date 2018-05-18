@@ -2,19 +2,6 @@
 Mutation Classification
 #######################
 
-************
-Installation
-************
-
-
-Before installing mutation_classifier, please make sure the latest version of conda is installed.
-
-Use the provided conda environment file as
-
-```bash
-$ conda-env create -f mutation_classifier.yml
-```
-
 
 *************
 Data sampling

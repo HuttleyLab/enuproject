@@ -10,11 +10,13 @@ Initial Setup
 
 ``ENU_project.yml`` file assists with setting up a virtual environment named ``mclass`` with all required dependencies installed within this virtual environment. Running the following commande to create the `mclass` environment using conda (please make sure the latest version of conda is installed).
 
-`conda env create -f ENU_project.yml`
+```bash
+conda env create -f ENU_project.yml```
 
 Activating the ``mclass`` environment by running:
 
-`source activate mclass`
+```bash
+source activate mclass```
 
 This environment has all required dependencies installed to run all scripts within this repository.
 
