@@ -285,14 +285,15 @@ def logreg_on_train(output_dir, gc_feature):
     confusion_matrix = pd.DataFrame(metrics.confusion_matrix(expects, predictions), index=[i for i in response_classes], columns=[i for i in response_classes]).rename_axis('actual / predicted', axis=1)
     confusion_matrix = json.loads(confusion_matrix.to_json())
     result_dict.update(confusion_matrix)
-    au_roc_score = {'auROC' : roc_auc_score(expects, predicted_scores)}
+    au_roc_score = {'auROC' : roc_auc_score(expects, predicted_scores),
+                    'accuracy': metrics.accuracy_score(expects, predictions, normalize=True)}
     result_dict.update(au_roc_score)
     
     output_file = os.path.join(output_dir, 'clf_on_train.json')
     with open(output_file, 'w') as report_file:
-        LOGGER.log_message(output_file, label="Result report file")
         report_file.write(json.dumps(result_dict))
         
+    LOGGER.log_message(output_file, label="Result report file")
     print ()
     print ('clf_on_train.json is saved to output directory!')
     print ('=' * 50)
@@ -340,14 +341,15 @@ def logreg_testing(testing_file, clf_file, scaler_file, output_dir, gc_feature):
     confusion_matrix = pd.DataFrame(metrics.confusion_matrix(expects, predictions), index=[i for i in response_classes], columns=[i for i in response_classes]).rename_axis('actual / predicted', axis=1)
     confusion_matrix = json.loads(confusion_matrix.to_json())
     result_dict.update(confusion_matrix)
-    au_roc_score = {'auROC' : roc_auc_score(expects, predicted_scores)}
+    au_roc_score = {'auROC' : roc_auc_score(expects, predicted_scores),
+                    'accuracy': metrics.accuracy_score(expects, predictions, normalize=True)}
     result_dict.update(au_roc_score)
     
     output_file = os.path.join(output_dir, 'classification_report.json')
     with open(output_file, 'w') as report_file:
-        LOGGER.log_message(output_file, label="Result report file")
         report_file.write(json.dumps(result_dict))
-        
+    
+    LOGGER.log_message(output_file, label="Result report file")
     print ()
     print ('classification_report.json is saved to output directory!')
     print ('=' * 50)
