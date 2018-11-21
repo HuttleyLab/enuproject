@@ -6,29 +6,6 @@ This loglin repository contains scripts used to generate the samples and perform
 
 As the repository also includes the counts data from which all analyses were conducted, running all scripts listed under the "Analysis of neighbourhood effects" and the "Analysis of mutation spectra" sections should reproduce exactly the tables and figures reported in the manuscript.
 
-***********************************
-Sampling the mouse spontaneous data
-***********************************
-
-``read_mouse_germline.py`` reads files containing one-to-one ortholog alignments of mouse-rat-squirrel protein coding sequences, query the Ensembl variation database, and produce a summary table containing SNP symbols, locations, strands, effects, alleles, flanking sequences of required length (both 5' and 3', 250bp from each side), and relative coordinates of a SNP on mouse protein coding sequence.
-
-The one-to-one ortholog alignment is obtained via the following steps:
-
-1. Sampling homolog sequences by using Pycogent3 HomologSampler, details please refer to `HomologSampler Bitbucket page <https://bitbucket.org/pycogent3/homologsampler>`_.
-2. Get one-to-one alignment by using Phyg-align, details please refer to `Phyg-align Bitbucket page <https://bitbucket.org/gavin.huttley/phyg>`_.
-
-``sample_mouse_germline.py`` producing a summary table containing SNP ID, chromosome location, SNP strand, effects, alleles, ancestral base, variant base and flanking sequences of required lengths (250bp here) for mouse germline mutations. The results of this were saved into a .TXT file for later use.
-
-
-*********************
-Sampling the ENU data
-*********************
-
-Download ENU mutation files `SNVs20151101.txt <https://databases.apf.edu.au/mutations/>`_ from Australian Phenomics Facility database.
-
-``get_ENU_variants.py`` reads ENU mutation files, according to chromosomes and coordinates given in the file, query Ensembl and obtain flanking sequences of required lengths (250bp). Then generate the data format consistent with that produced for the germline mutations.
-
-
 **************************************
 Convert sequence data into count table
 **************************************
