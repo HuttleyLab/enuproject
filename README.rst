@@ -40,6 +40,8 @@ The BSD 3-clause license is included in this repo as well, refer to `license.txt
 Data sampling
 *************
 
+Scripts are located in `sample_data/`.
+
 Sampling the germline data
 ==========================
 
