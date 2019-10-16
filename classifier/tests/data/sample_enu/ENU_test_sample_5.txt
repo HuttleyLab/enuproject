@@ -1,2 +1,0 @@
-Id|IGL Id|Chromosome|Coordinate (Assembly version: GRCm38)|Amino Acid Change|Splice Position|Polyphen Score|Polyphen Prediction|SIFT Score|SIFT Prediction|MGI accession Id|Gene Name|Gene Description|Zygosity|Phenotype|Ref Base|Var Base|Read Depth|Median Base Quality|Snp Exon Type|Availability|Source
-774781|IGL00164|14|55065026|S->P|||Unknown||deleterious|MGI:2686934|Zfhx2|zinc finger homeobox 2 [Source:MGI Symbol;Acc:MGI:2686934]|Heterozygous||A|G|185|36.0|Non-synonymous|Cryopreserved|APF-G1

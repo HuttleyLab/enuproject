@@ -1,9 +1,0 @@
-2018-01-30 18:25:18	compute-5-1.local:58271	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
-2018-01-30 18:25:18	compute-5-1.local:58271	INFO	python : 3.5.2
-2018-01-30 18:25:18	compute-5-1.local:58271	INFO	user : yicheng
-2018-01-30 18:25:18	compute-5-1.local:58271	INFO	command_string : ./one_class_svm_analysis.py ocs_classification --training_file ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/training_4.csv.gz --testing_file ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/testing_4.csv.gz -o ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/OCS
-2018-01-30 18:25:18	compute-5-1.local:58271	INFO	vars : {'output_dir': '../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/OCS', 'testing_file': '../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/testing_4.csv.gz', 'training_file': '../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/training_4.csv.gz'}
-2018-01-30 18:25:18	compute-5-1.local:58271	INFO	Training data file : ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/training_4.csv.gz
-2018-01-30 18:25:19	compute-5-1.local:58271	INFO	Pickled one class svm model : ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/OCS/one_class_svm.pkl
-2018-01-30 18:25:19	compute-5-1.local:58271	INFO	Testing data file : ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/testing_4.csv.gz
-2018-01-30 18:25:19	compute-5-1.local:58271	INFO	Result report file : ../results/chrom1/5-mer/data_ratio_1/direction_All/1_way_samples/train_size_4101/sample_4/OCS/classification_report.json

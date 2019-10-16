@@ -1,8 +1,0 @@
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	system_details : system=#1 SMP Wed Apr 22 06:48:29 UTC 2015
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	python : 3.5.2
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	user : yicheng
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	command_string : ./classification_analysis.py bernoullinb_on_train -o ../results/chrom1/7-mer/data_ratio_1/direction_All/2_way_samples/train_size_10255/sample_2/NB
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	vars : {'output_dir': '../results/chrom1/7-mer/data_ratio_1/direction_All/2_way_samples/train_size_10255/sample_2/NB', 'gc_feature': False}
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	Naive Bayes model : ../results/chrom1/7-mer/data_ratio_1/direction_All/2_way_samples/train_size_10255/sample_2/NB/nb_classifier.pkl
-2017-12-15 16:59:01	compute-5-3.local:20639	INFO	CV training data file : ../results/chrom1/7-mer/data_ratio_1/direction_All/2_way_samples/train_size_10255/sample_2/NB/cross_validation/cv_training.csv
-2017-12-15 16:59:02	compute-5-3.local:20639	INFO	Result report file : ../results/chrom1/7-mer/data_ratio_1/direction_All/2_way_samples/train_size_10255/sample_2/NB/clf_on_train.json
