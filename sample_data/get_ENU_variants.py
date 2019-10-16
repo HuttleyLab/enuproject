@@ -27,7 +27,7 @@ def is_correct_chrom(chroms, chromosome):
         return chromosome in [c.upper() for c in chroms]
 
 def get_ENU_data(records, chroms, coord_range):
-    """only sample data of inerested, 
+    """only sample data of interest, 
     - variants with exonic effect only.
     - variants on a specific chromosome, 
     - or variants within a specific range in a genome."""
