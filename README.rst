@@ -32,7 +32,7 @@ The `classifier` directory contains scripts and data to perform the classificati
 The raw data used in this study are available at `Zenodo <http://zenodo.org/record/1204695>`_.
 
 
-`manuscript_figs_tables.ipynb` is a Jupiter notenook used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the `compound_figures` directory in LATEX format.
+`manuscript_figs_tables.ipynb` is a Jupyter notebook used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the `compound_figures` directory in LATEX format.
 
 The BSD 3-clause license is included in this repo as well, refer to `license.txt`
 
@@ -62,59 +62,105 @@ Download ENU mutation files `SNVs20151101.txt <https://databases.apf.edu.au/muta
 
 ``get_ENU_variants.py`` reads ENU mutation files, according to chromosomes and coordinates given in the file, query Ensembl, obtain flanking sequences of required lengths (250bp), GC% and the response class, which is 1 for all ENU-induced muations. Then generate the data format consistent with that produced for the germline mutations.
 
-.. ``sort_mut_dir.py`` categorise ENU and germline variant data according to their mutation directions, and save into different files.
+Generating data for analysis
+============================
 
-Example workflow
-================
+In this example, we are working on SNP data on chromosome 1 only.
 
-In this example, we are working on SNP data on chromosome 1 only. 
-
-1. Acquire mouse-rat-squirrel protein coding sequences. 
+1. Acquire mouse-rat-squirrel protein coding sequences.
 ::
 
-	$ homolog_sampler one2one --ref=Mouse --species=Mouse,Rat,Squirrel --release=88 
-		--outdir=mrs_homolog_seqs/ --force_overwrite
+    $ homolog_sampler one2one --ref=Mouse --species=Mouse,Rat,Squirrel --release=88
+        --outdir=mrs_homolog_seqs/ --force_overwrite
 
-2. Produce CDS one-to-one alignments. 
-::
-	
-$ phyg-align -i mrs_homolog_seqs/ -o mrs_homolog_alns/ -m HKY85-GAMMA
-
-3. Produce a summary table containing raw mouse germline SNP data
-::
-	
-$ python read_mouse_germline.py -i ../path/to/mrs_homolog_alns/ -o ../path/to/mrs_homolog_vars/ -f 250
-
-4. Produce a summary table containing required mouse germline SNP information.
+2. Produce CDS one-to-one alignments.
 ::
 
-	$ python sample_mouse_germline.py -a ../path/to/mrs_homolog_alns/ 
-		-v ../path/to/mrs_homolog_vars/ 
-		-o ../path/to/germline_variants/germline_chrom1.txt 
-		-n Mouse -f 10 -min_len 5 -c 11
+$ phyg-align -i mrs_homolog_seqs/ -o mrs_homolog_alns/ -m HKY85
 
-6. Produce a summary table containing required ENU-induced SNP information.
+.. note:: ``phyg-align`` is now replaced capabilities in a version of `cogent3`
+
+3. Produce a summary table containing raw mouse germline SNP data::
+
+    $ python read_mouse_germline.py -i ../path/to/mrs_homolog_alns/ -o ../path/to/mrs_homolog_vars/ -f 250
+
+4. Produce a summary table containing required mouse germline SNP information. This infers the mutation direction from fitting a HKY85 model to the sequence alignments and inferring the most likely ancestral states for annotated SNOP locations.::
+
+    $ python sample_mouse_germline.py -a ../path/to/mrs_homolog_alns/
+        -v ../path/to/mrs_homolog_vars/
+        -o ../path/to/germline_variants/germline_chrom1.txt
+        -n Mouse -f 10 -min_len 5 -c 11
+
+6. Produce a summary table containing required ENU-induced SNP information.::
+
+    $ python get_ENU_variants.py -i ../path/to/SNVs20151101.txt
+    -o ../path/to/ENU_variants/enu_chrom1.txt -f 250 -c 1
+
+7. Run the ``variant_data/modify_variant_data.ipynb`` notebook to produce the standardised data formats for use in the analyses. Results are written to ``variant_data/Germline`` and ``variant_data/ENU`` as gzipped tsv files.
+
+8. Run the ``variant_data/concat_data.ipynb`` notebook to merge the ENU and spontaneous germline varinats into single files for each chromosome. Results are written to ``variant_data/combined_data`` as gzipped tsv files. ENU variants are indicated by ``e`` value in the ``response`` column, while spontaneous germline are indicated by ``g``.
+
+Using the ``mutation_origin`` command line tool
+===============================================
+
+We first note that ``mutation_origin`` is a rewrite of scripts authored by Yichneg Zhu. The rewrite was done to simplify inclusion of other classification algorithms. With hindsight of experience, optimisations for storage and performance were also included.
+
+Note that all analyses done are logged using ``scitrack``. The generated log files are under the same directory and contain all run settings and md5 sums for the files used/produced.
+
+For a full description of the command line options, see the ``mutation_origin`` `GitHub page <https://github.com/HuttleyLab/mutationorigin>`_.
+
+Generating data for train and test
+----------------------------------
+
 ::
 
-	$ python get_ENU_variants.py -i ../path/to/SNVs20151101.txt 
-	-o ../path/to/ENU_variants/enu_chrom1.txt -f 250 -c 1
+    $ mutori_batch sample_data -ep variant_data/ENU/SNVs20151101_chrom1.tsv.gz -gp variant_data/Germline/mouse_germline_All_88_chrom1.tsv.gz -op classifier/chrom1_train/data -n 10 -N 3
 
+Where ``-n`` is the number of replicates produced, ``-N`` the number of processors. This will generate balanced (equal numbers of randomly sampled ENU and Spontaneous germline) samples with total size of 1, 2, 4, 6, 8, and 16 thousand. The same samples are used for each classifier permutation.
 
-After implementing these commands, the resulted germline data and ENU data have a consistent format as follows:
+Training classifiers, logistic regression as an example
+-------------------------------------------------------
 
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
-| var_id      | chromosome | strand | effect             | allele freqs | alleles   | ref base | var base | 5' flank  | 3' flank | GC%   | pep_alleles | gene_loc | gene_id | response |
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
-| germline_01 | 1          | -1     | synonymous_variant | None         | {'A','G'} | G        | A        | GAG...TGA | TC...GGT | 0.348 | None        | None     | None    | -1       |
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
-| ...         | ...        | ...    | ...                | ...          | ...       | ...      | ...      | ...       | ...      | ...   | ...         | ...      | ...     |          |
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
+::
 
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
-| var_id      | chromosome | strand | effect             | allele freqs | alleles   | ref base | var base | 5' flank  | 3' flank | GC%   | pep_alleles | gene_loc | gene_id | response |
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
-| ENU_01      | 1          | 1      | missense_variant   | None         | {'T','G'} | G        | T        | CAC...GTA | GC...GTG | 0.460 | None        | None     | None    | 1        |
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
-| ...         | ...        | ...    | ...                | ...          | ...       | ...      | ...      | ...       | ...      | ...   | ...         | ...      | ...     |          |
-+-------------+------------+--------+--------------------+--------------+-----------+----------+----------+-----------+----------+-------+-------------+----------+---------+----------+
+    $ mutori_batch lr_train -tp classifier/chrom1_train/data -op classifier/chrom1_train/lr/train -mr upto2 -N 20
+
+This will trains a LR model with all possible terms up to 2-way interactions, for all data sets indicated by ``-tp`` and write the classifiers as python native serialised (``pickle`` formatted) files to matching paths indicated by ``-op``, using 20 processors.
+
+Testing classifiers -- the prediction step
+------------------------------------------
+
+::
+
+    $ mutori_batch predict -tp chrom1_train/data -cp chrom1_train/lr/train -op chrom1_train/lr/predict -N 3
+
+Similar to above, it selects the matching files to those used for generating the classifier. For instance, for the classifier saved at ``chrom1_train/lr/train/1k/f0/train-0-classifier-lr.pkl`` will be applied to the testing data ``chrom1_train/data/1k/test-0.tsv.gz``. The result is a set of predictions for all the records in the testing set.
+
+Evaluating performance
+----------------------
+
+::
+
+    $ mutori_batch performance -tp chrom1_train/data -pp chrom1_train/lr/predict -op chrom1_train/lr/performance
+
+Takes the results from the above and produces, for the performance statistics (typically AUC), the mean and standard deviation across cross-validation replicates.
+
+Summarising performance across classifiers and sample sizes
+-----------------------------------------------------------
+
+::
+
+    $ mutori_batch collate -bp chrom1_train/ -op chrom1_train/collated -O -ex genome
+
+Takes all performance result files and combines into a single tsv. Excludes any files under the directory indicated by the ``-ex`` option. In this instance, this is where the whole genome prediction results are stored.
+
+Predictions for the genome
+==========================
+
+Having chosen a classifier based on the last step, that classifier is applied to the entire genome, essentially recapping the steps from the prediction step through to the collate step. For example::
+
+    $ mutori_batch predict -cp chrom1_train/lr/train/16k/f29d2p/train-1-classifier-lr.pkl -tp ../variant_data/combined_data/*.tsv.gz -op chrom1_train/genome/lr/predict -N 3
+
+Where the value after ``-cp`` is the chosen LR classifier and ``-tp`` is the location of the genomic data.
+
 
