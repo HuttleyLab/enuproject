@@ -1,0 +1,6 @@
+classifier/chrom1_train/lr/performance/16k.tar.gz filter=lfs -text
+classifier/chrom1_train/lr/predict/16k.tar.gz filter=lfs -text
+classifier/chrom1_train/nb/performance/16k.tar.gz filter=lfs -text
+classifier/chrom1_train/nb/predict/16k.tar.gz filter=lfs -text
+classifier/chrom1_train/xgb/train/16k.tar.gz filter=lfs -text
+classifier/chrom1_train/xgb/train/8k.tar.gz filter=lfs -text
