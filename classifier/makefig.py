@@ -1,7 +1,6 @@
 import numpy
 import plotly.graph_objs as go
-from plotly import tools, figure_factory as ff
-
+from plotly import subplots, figure_factory as ff
 
 def MakeMatch(indexed_funcs, debug=False):
     def matches(vals):
@@ -109,7 +108,7 @@ def get_plotly_fig(traces, stat='AUC', title=None, layout=None):
 
 def stacked_fig_from_traces(traces, titles, label_font_size=20,
                             y_bounds=None, layout=None):
-    fig = tools.make_subplots(rows=1, cols=2, shared_xaxes=True,
+    fig = subplots.make_subplots(rows=1, cols=2, shared_xaxes=True,
                               shared_yaxes=True, vertical_spacing=0.1,
                               horizontal_spacing=0.05,
                               subplot_titles=titles,
@@ -153,7 +152,7 @@ def stacked_fig_from_traces(traces, titles, label_font_size=20,
 
 def fig_grid_from_traces(traces, titles, label_font_size=20,
                          y_bounds=None, layout=None):
-    fig = tools.make_subplots(rows=2, cols=2, shared_xaxes=True,
+    fig = subplots.make_subplots(rows=2, cols=2, shared_xaxes=True,
                               shared_yaxes=True, vertical_spacing=0.1,
                               horizontal_spacing=0.05,
                               subplot_titles=titles,
