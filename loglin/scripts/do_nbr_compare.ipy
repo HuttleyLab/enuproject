@@ -1,0 +1,47 @@
+#!/usr/bin/env ipython
+
+from itertools import combinations
+import re
+
+directions = ['AtoC', 'AtoG', 'AtoT', 'CtoA', 'CtoG', 'CtoT', 'GtoA', 'GtoC',
+             'GtoT', 'TtoA', 'TtoC', 'TtoG']
+
+pattern = re.compile("(%s)" % '|'.join(directions))
+
+# compare ENU versus germline for each chromosome class
+command = "mutation_analysis nbr -1 %(ENU)s -2 %(germline)s -o %(out)s"
+
+for direction in directions:
+    for chrom_class in "autosomes sex_chroms".split():
+        enu_path = !find ../data/ENU_variants/counts/$chrom_class/directions -name *$direction*.txt
+        germline_path = !find ../data/germline_variants/counts/$chrom_class/directions -name *$direction*.txt
+        
+        if enu_path == []:
+            continue
+        enu_path, germline_path = enu_path[0], germline_path[0]
+        
+        o_path = "../results/ENU_vs_germline/%s/directions/%s" % (chrom_class, direction)
+        cmnd = command % dict(ENU=enu_path, germline=germline_path, out=o_path)
+        print ("=" * 60)
+        print (cmnd)
+        !$cmnd
+        print ()
+
+
+
+# compare Autosomes versus sex-chromosomes for position influences
+#command = "mutation_analysis nbr -1 %(A)s -2 %(X)s -o %(out)s"
+#
+#for mut_source in "ENU_variants germline_variants".split():
+#    for direction in directions:
+#        a_path = !find ../data/$mut_source/counts/autosomes/directions -name *$direction*.txt
+#        x_path = !find ../data/$mut_source/counts/sex_chroms/directions -name *$direction*.txt
+#        if a_path == []:
+#            continue
+#        a_path, x_path = a_path[0], x_path[0]
+#        o_path = "../results/%s_A_vs_X/directions/%s" % (mut_source.split('_')[0], direction)
+#        cmnd = command % dict(A=a_path, X=x_path, out=o_path)
+#        print ("=" * 60)
+#        print (cmnd)
+#        !$cmnd
+#        print ()

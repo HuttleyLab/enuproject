@@ -1,0 +1,32 @@
+#!/usr/bin/env ipython
+
+# Just doing the transition mutations
+directions = ['AtoC', 'AtoG', 'AtoT', 'CtoA', 'CtoT', 'GtoA',
+             'GtoT', 'TtoA', 'TtoC', 'TtoG']
+mut_sources = ['ENU_variants', 'germline_variants']
+chroms = ['autosomes', 'sex_chroms'] 
+
+#counts_dir = "../data/%(mut_source)s/long_flank_counts/%(chrom)s/directions"
+outpath_template = "../results/%(mut_source)s/long_flanks/%(chrom)s/directions/%(direction)s"
+
+command_template = "mutation_analysis nbr -1 %(infile)s -o %(outfile)s --first_order --plot_cfg=wide_plots.cfg"
+
+for mut_source in mut_sources:
+    for chrom in chroms:
+        for direction in directions:
+            sample = dict(mut_source=mut_source, chrom=chrom, direction=direction)
+            
+            find_cmnd = "find ../data/%(mut_source)s/long_flank_counts/%(chrom)s/directions -name '*%(direction)s*txt*'" % sample
+            fn = !$find_cmnd
+            assert len(fn) == 1, fn
+            outpath = outpath_template % sample
+            sample.update(dict(infile=fn[0], outfile=outpath))
+
+            command = command_template % sample
+            print ("=" * 20)
+            print( "Generating long flank plots for: mut_source=%s, chrom=%s, direction=%s" % (mut_source, chrom, direction))
+            print ()
+            print (command)
+            !$command
+            print()
+

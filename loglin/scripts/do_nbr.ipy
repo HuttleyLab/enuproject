@@ -1,0 +1,28 @@
+#!/usr/bin/env ipython
+
+import re
+mut_sources = ['germline_variants']#['ENU_variants', 'germline_variants']
+chroms = ['autosomes', 'sex_chroms']  
+directions = ['AtoC', 'AtoG', 'AtoT', 'CtoA', 'CtoG', 'CtoT', 'GtoA', 'GtoC',
+             'GtoT', 'TtoA', 'TtoC', 'TtoG']
+direction = re.compile("(%s)" % '|'.join(directions))
+
+# raw direction
+counts_dir_template = "../results/counts/%(mut_source)s/%(chrom)s/directions"
+outpath_template = "../results/%(mut_source)s/%(chrom)s/directions/%(direction)s"
+
+for mut_source in mut_sources:
+    for chrom in chroms:
+        sample = dict(mut_source=mut_source, chrom=chrom)
+        counts_dir = counts_dir_template % sample
+        
+        fns = !find $counts_dir -name *.txt
+        for fn in fns:
+            d = direction.findall(fn)[0]
+            sample.update(dict(direction=d))
+            outpath = outpath_template % sample
+            command = "mutation_analysis nbr -1 %s -o %s --plot_cfg=plots.cfg " % (fn, outpath)
+            print ("=" * 40)
+            print (command)
+            !$command
+            print ()
