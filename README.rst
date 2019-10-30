@@ -32,7 +32,7 @@ The `classifier` directory contains scripts and data to perform the classificati
 The raw data used in this study are available at `Zenodo <http://zenodo.org/record/1204695>`_.
 
 
-`manuscript_figs_tables.ipynb` is a Jupyter notebook used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the `compound_figures` directory in LATEX format.
+`make_manuscript_figs.ipynb`, `make_manuscript_tables.ipynb` are Jupyter notebooks used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the `compound_figures` directory in LATEX format.
 
 The BSD 3-clause license is included in this repo as well, refer to `license.txt`
 
