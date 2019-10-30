@@ -32,7 +32,6 @@ example_results*
 figs_n_tabs/*
 plos*
 genome/*
-loglin/results/ENU_variants/*
-loglin/results/germline_variants/*
-loglin/data/ENU_variants/*
-loglin/data/germline_variants/*
+loglin/results/*
+loglin/data/*
+classifier/chrom1_train/*
