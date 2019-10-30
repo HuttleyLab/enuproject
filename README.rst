@@ -49,8 +49,8 @@ Sampling the germline data
 
 The one-to-one ortholog alignment is obtained via the following steps:
 
-1. Sampling homolog sequences by using Pycogent3 HomologSampler, details please refer to `HomologSampler Bitbucket page <https://bitbucket.org/pycogent3/homologsampler>`_.
-2. Get one-to-one alignment by using Phyg-align, details please refer to `Phyg-align Bitbucket page <https://bitbucket.org/gavin.huttley/phyg>`_.
+1. Sampling homolog sequences by using HomologSampler, details please refer to `HomologSampler page <https://github.com/cogent3/homologsampler>`_.
+2. Get one-to-one alignment by using Phyg-align. (This tool is defunct and has been replaced by ``cogent3``).
 
 ``sample_mouse_germline.py`` producing a summary table containing SNP ID, chromosome location, SNP strand, effects, alleles, ancestral base, variant base, flanking sequences of required lengths (250bp here) for mouse germline mutations, GC% and the response class, which is -1 for all germline muations. The results of this were saved into a .TXT file for later use.
 
