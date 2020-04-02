@@ -8,13 +8,13 @@ This repository contains scripts used to generate the samples and perform the an
 Initial Setup
 *************
 
-``ENU_project.yml`` file assists with setting up a virtual environment named ``mclass`` with all required dependencies installed within this virtual environment. Running the following commande to create the `mclass` environment using conda (please make sure the latest version of conda is installed).
+``ENU_project.yml`` file assists with setting up a virtual environment named ``mclass`` with all required dependencies installed within this virtual environment. Running the following commande to create the ``mclass`` environment using conda (please make sure the latest version of conda is installed).
 
-```$ conda env create -f ENU_project.yml```
+``$ conda env create -f ENU_project.yml``
 
 Activating the ``mclass`` environment by running:
 
-```$ source activate mclass```
+``$ source activate mclass``
 
 This environment has all required dependencies installed to run all scripts within this repository.
 
@@ -25,22 +25,21 @@ Repo contents
 
 This repository contains scripts used to run two completely independent analyses.
 
-The `loglin` directory contains scripts and data to run the loglinear analysis. The log-linear analysis compares the neighbourhood effects between the ENU-induced and spontaneous mutations in mouse, in terms of the identity of the associated mutation motifs and their relative magnitude. Please refer to the README.rst file inside this directory for detailed explaination regarding the package installation and the analyses implementation.
+The ``loglin`` directory contains scripts and data to run the log-linear analysis. The log-linear analysis compares the neighbourhood effects between the ENU-induced and spontaneous mutations in mouse, in terms of the identity of the associated mutation motifs and their relative magnitude. Please refer to the README.rst file inside this directory for detailed explaination regarding the package installation and the analyses implementation.
 
-The `classifier` directory contains scripts and data to perform the classification analysis. The classification analysis uses the neighbourhood effect discovered from the log-linear analysis to build classifiers, for predicting the mechanistic origin of individual point mutations. Again, for detailed installation and implementation guidelines, please refer to the README.rst file inside this directory.
+The ``classifier`` directory contains scripts and data to perform the classification analysis. The classification analysis uses the neighbourhood effect discovered from the log-linear analysis to build classifiers, for predicting the mechanistic origin of individual point mutations. Again, for detailed installation and implementation guidelines, please refer to the ``README.rst`` file inside this directory.
 
 The raw data used in this study are available at `Zenodo <http://zenodo.org/record/1204695>`_.
 
+``make_manuscript_figs.ipynb``, ``make_manuscript_tables.ipynb`` are Jupyter notebooks used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the ``compound_figures`` directory in LATEX format.
 
-`make_manuscript_figs.ipynb`, `make_manuscript_tables.ipynb` are Jupyter notebooks used to produce all figures and tables used in the manuscripts. Some compounded figures are saved into the `compound_figures` directory in LATEX format.
-
-The BSD 3-clause license is included in this repo as well, refer to `license.txt`
+The BSD 3-clause license is included in this repo as well, refer to ``license.txt``.
 
 *************
 Data sampling
 *************
 
-Scripts are located in `sample_data/`.
+Scripts are located in ``sample_data/``.
 
 Sampling the germline data
 ==========================
@@ -78,7 +77,7 @@ In this example, we are working on SNP data on chromosome 1 only.
 
 $ phyg-align -i mrs_homolog_seqs/ -o mrs_homolog_alns/ -m HKY85
 
-.. note:: ``phyg-align`` is now replaced capabilities in a version of `cogent3`
+.. note:: ``phyg-align`` is now replaced by capabilities in a version of `cogent3`
 
 3. Produce a summary table containing raw mouse germline SNP data::
 
