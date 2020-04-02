@@ -17,9 +17,11 @@ def get_tags(filepath, tag):
         data = "".join(infile.readlines())
 
     all_tags = pattern.findall(data)
-    all_tags = [t.split('{')[-1][:-1] for t in all_tags]
+    all_tags = [t.split("{")[-1][:-1] for t in all_tags]
     #  we ignore equation tags
-    all_tags = [(t.strip(), filepath.strip()) for t in all_tags if not t.startswith('eq:')]
+    all_tags = [
+        (t.strip(), filepath.strip()) for t in all_tags if not t.startswith("eq:")
+    ]
     return OrderedDict(all_tags)
 
 
@@ -44,15 +46,21 @@ def filtertags(filterfunc, tags):
             new_tags[tag] = value
     return new_tags
 
-def get_ms_supp_labels(float_type, texdir="../mutation_classifier_manuscript", verbose=False):
+
+def get_ms_supp_labels(float_type, texdir="../ENU-ms-genetics-v2", verbose=False):
     """returns ordered dicts of labels from the manuscript for
     supplementary and main manuscript body"""
-#     assert float_type in ('fig', 'tab')
+    #     assert float_type in ('fig', 'tab')
     # hardcoding these, in the manuscript order of the sections
-    texfns = [os.path.join(texdir, tfn) for tfn in ("introduction.tex",
-                                                    "results.tex",
-                                                    "discussion.tex",
-                                                    "methods.tex")]
+    texfns = [
+        os.path.join(texdir, tfn)
+        for tfn in (
+            "MS-introduction.tex",
+            "MS-results.tex",
+            "MS-discussion.tex",
+            "MS-methods.tex",
+        )
+    ]
     alllabels = None
     for tfn in texfns:
         tags = get_tags(tfn, "label")
@@ -60,7 +68,7 @@ def get_ms_supp_labels(float_type, texdir="../mutation_classifier_manuscript", v
             alllabels = tags
         else:
             alllabels.update(tags)
-    
+
     print("\n\nWorking on labels")
     alllabels = filtertags(float_type, alllabels)
 
@@ -73,13 +81,13 @@ def get_ms_supp_labels(float_type, texdir="../mutation_classifier_manuscript", v
             allrefs.update(tags)
     print("\n\nWorking on refs")
     allrefs = filtertags(float_type, allrefs)
-    mainrefs = filtertags(lambda x: not x.startswith('sup'), allrefs)
-    suprefs = filtertags(lambda x: x.startswith('sup'), allrefs)
+    mainrefs = filtertags(lambda x: not x.startswith("sup"), allrefs)
+    suprefs = filtertags(lambda x: x.startswith("sup"), allrefs)
 
     missing = set(alllabels) - set(mainrefs)
 
     rows = [(missed, alllabels[missed]) for missed in missing]
-    table = LoadTable(header=['label missing', 'referenced in'], rows=rows)
+    table = LoadTable(header=["label missing", "referenced in"], rows=rows)
     if verbose:
         print(table)
     return mainrefs, suprefs
